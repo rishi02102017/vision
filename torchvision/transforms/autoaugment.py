@@ -477,7 +477,7 @@ class AugMix(torch.nn.Module):
         alpha (float): The hyperparameter for the probability distributions. Default is ``1.0``.
         all_ops (bool): Use all operations (including brightness, contrast, color and sharpness). Default is ``True``.
         interpolation (InterpolationMode): Desired interpolation enum defined by
-            :class:`torchvision.transforms.InterpolationMode`. Default is ``InterpolationMode.NEAREST``.
+            :class:`torchvision.transforms.InterpolationMode`. Default is ``InterpolationMode.BILINEAR``.
             If input is Tensor, only ``InterpolationMode.NEAREST``, ``InterpolationMode.BILINEAR`` are supported.
         fill (sequence or number, optional): Pixel fill value for the area outside the transformed
             image. If given a number, the value is used for all bands respectively.
